@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: "coolhub-user"
+
+error-generating-service:
+  generate-errors: false

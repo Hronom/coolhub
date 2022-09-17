@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "coolhub-ui"
+  devtools:
+    restart:
+      # Workaround for https://github.com/vaadin/flow/issues/5947
+      additional-exclude: META-INF/VAADIN/config/**
+
+# Ensure application is run in Vaadin 14/npm mode
+vaadin:
+  compatibilityMode: false
+
+#logging.level.root=TRACE
+logging:
+  level:
+    org:
+      atmosphere: warn
