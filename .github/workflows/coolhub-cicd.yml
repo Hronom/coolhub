@@ -24,6 +24,9 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
+      - name: Run dependencies
+        run: docker compose up -d
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
